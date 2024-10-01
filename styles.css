@@ -1,0 +1,207 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Set body font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.4s ease;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+header {
+    background: url('travelimage.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: background 0.6s ease-in-out;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Set title font */
+    font-size: 4rem;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    transition: font-size 0.4s ease, text-shadow 0.4s ease;
+}
+
+header h3 {
+    font-size: 1.5rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif; /* Set section title font */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif; /* Set article title font */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem; /* Body text size */
+    line-height: 1.6; /* Line height for readability */
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdd57;
+    transform: scale(1.1);
+}
+
+.welcome {
+    display: flex;
+    padding: 60px;
+    background-color: #f8efe6;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.welcome div {
+    width: 50%;
+    transition: transform 0.4s ease;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.welcome img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.welcome img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.destinations {
+    background: #2b4f3e;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.destinations h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+.destinations h2:hover {
+    transform: scale(1.1);
+}
+
+.destinations p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.dest-grid div {
+    background: #fff;
+    color: #2b4f3e;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dest-grid div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dest-grid img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.dest-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #2b4f3e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact {
+    padding: 60px;
+    background-color: #f8efe6;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact label {
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #2b4f3e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #1a3b2b;
+}
